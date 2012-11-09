@@ -1,167 +1,74 @@
-<!doctype html>  
-<html lang="en">  
-<head>
-  <meta charset="utf-8">  
-  <title>Halloween Bash Profile Generator</title>  
-  <meta name="description" content="Bash Profile Generator">  
-  <meta name="author" content="RexFeng">
-  <!--[if lt IE 9]>  
-  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>  
-  <![endif]-->  
-  <link rel="stylesheet" href="assets/profile.css">
-</head>
+<!DOCTYPE html>
+<html>
 
-<body>
-<div id="bg-wrap">
-  <div id="content-wrap">
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Halloweenbash : Custom Bash Profile Generator" />
 
-    <header>
-      <hgroup>
-        <h1><a href="./index.html" title="Bash Profile Generator">Bash Profile Generator</a></h1>
-        <h3>Your very own costume for Halloween.</h3>
-      </hgroup>
-    </header>
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
-    <h2>bash preview</h2>
-    <section id="terminal">
-      <h2 id="title">
-      HalloweenBash &#8212; bash &#8212; 80x24
-      </h2>
-    <div id="area">
-      <span id="prompt">
-        <!--Last login: Wed Oct  3 18:14:19 on ttys001<br />-->
-        macbook:HalloweenBash jon$ 
-      </span>
+    <title>Halloweenbash</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/willolbrys/HalloweenBash">View on GitHub</a>
+
+          <h1 id="project_title">Halloweenbash</h1>
+          <h2 id="project_tagline">Custom Bash Profile Generator</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/willolbrys/HalloweenBash/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/willolbrys/HalloweenBash/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
     </div>
-    </section>
 
-    <h2>Your Configuration</h2>
-    <section id="config" class="setupbox">
-      <ul id="current_config" class="connectedSortable">
-        <li class="psh">short hostname</li>
-        <li class="pscolon">:</li>
-        <li class="psworking">current dir basename</li>
-        <li class="psspace">(space)</li>
-        <li class="psu">user</li>
-        <li class="psdollar">$</li>
-      </ul>
-    </section>
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h3>Welcome to GitHub Pages.</h3>
 
-    <h2>1.) Drag these into (<strong>Your Configuration</strong>) above</h2>
-    <section id="customize" class="setupbox">
-      <ul id="prompt_strings" class="connectedSortable">
-        <li class="psd">date (Day Month Date)</li>
-        <li class="psh">short hostname</li>
-        <li class="pshost">full hostname</li>
-        <li class="psj">current shell jobs</li>
-        <li class="psl">terminal device</li>
-        <li class="psn">(newline)</li>
-        <li class="psu">user</li>
-        <li class="pss">shell name</li>
-        <li class="pstime24hms">time (24h HH:MM:SS)</li>
-        <li class="pstime12hms">time (12h HH:MM:SS)</li>
-        <li class="pstime12ampm">time (12h AM PM)</li>
-        <li class="pstime24hhmm">time (24h HH:MM)</li>
-        <li class="psv">bash version</li>
-        <li class="psversion">long bash version</li>
-        <li class="psw">current dir</li>
-        <li class="psworking">current dir basename</li>
-        <li class="psat">@</li>
-        <li class="psgit">git branch</li>
-        <li class="psexitstatus">exit status</li>
-        <li class="psbang">!</li>
-        <li class="pshash">#</li>
-        <!-- <li class="psdollar">$</li> -->
-        <!-- <li class="psbackslash">\</li> -->
-        <li class="psleftbrack">[</li>
-        <li class="psrightbrack">]</li>
-        <li class="pszero">0</li>
-        <li class="pscaret">^</li>
-        <li class="pssplat">*</li>
-        <li class="psdash">-</li>
-        <li class="psunder">_</li>
-        <li class="psleftbrace">{</li>
-        <li class="psrightbrace">}</li>
-        <li class="pscolon">:</li>
-        <li class="pscomma">,</li>
-        <li class="psperiod">.</li>
-        <li class="psquestion">?</li>
-        <li class="psspace">(space)</li>
-      </ul>
-    </section>
-    
-    <h2>2.) Choose your colors</h2>
-    <section id="colorpick" class="setupbox">
-      <h3>Foreground</h3>
-      <ul id="foregroundcolor">
-        <li class="none selected">(default)</li>
-        <li class="black">Black</li>
-        <li class="blue">Blue</li>
-        <li class="green">Green</li>
-        <li class="cyan">Cyan</li>
-        <li class="red">Red</li>
-        <li class="purple">Purple</li>
-        <li class="brown">Brown</li>
-      </ul>
-      <h3>Background</h3>
-      <ul id="backgroundcolor">
-        <li class="none selected">(default)</li>
-        <li class="black">Black</li>
-        <li class="blue">Blue</li>
-        <li class="green">Green</li>
-        <li class="cyan">Cyan</li>
-        <li class="red">Red</li>
-        <li class="purple">Purple</li>
-        <li class="brown">Brown</li>
-      </ul>
-    </section>
+<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
 
-    <h2>3.) Copy this into your <code>~/.bash_profile</code></h2>
-    <section id="copycode">
-      <section id="additionaltext"></section>
-      <section id="copytext">
-        export PS1="\h:\W \u\$ "
+<pre><code>$ cd your_repo_root/repo_name
+$ git fetch origin
+$ git checkout gh-pages
+</code></pre>
+
+<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+
+<h3>Designer Templates</h3>
+
+<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+
+<h3>Rather Drive Stick?</h3>
+
+<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+
+<h3>Authors and Contributors</h3>
+
+<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+
+<h3>Support or Contact</h3>
+
+<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
       </section>
-    </section>
+    </div>
 
-  </div>
-</div>
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Halloweenbash maintained by <a href="https://github.com/willolbrys">willolbrys</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
 
-<footer>
-  <h2>
-    Made in NYC at <a href="http://flatironschool.com/">The Flatiron School</a> 2012.
-  </h2>
-  <p>
-    In our first week of learning to code, we were getting familiar with the Command Line and
-    customizing our bash prompts. 
-    This involved deciphering webpages just to do simple tasks like adding colors or displaying the time.
-    I thought there had to be an easier way to do this, so 
-    <a href="./index.html" title="Bash Profile Generator">Halloween Bash</a> was created to allow people customize their bash profile 
-    with an intuitive drag & drop interface.
-  </p>  
-  <p>
-    If you have any comments or feedback, please reach out to me 
-    at <a href="https://twitter.com/rexfeng">@rexfeng</a>. Thanks for checking out <a href="./index.html" title="Bash Profile Generator">Halloween Bash</a>!
-  </p>
-</footer>
+    
 
-<a href="https://github.com/xta/HalloweenBash"><img id="ribbon" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" alt="Fork me on GitHub"/></a>
-
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-  <script src="./assets/jquery.ui.core.js"></script>
-  <script src="./assets/jquery.ui.widget.js"></script>
-  <script src="./assets/jquery.ui.mouse.js"></script>
-  <script src="./assets/jquery.ui.sortable.js"></script>
-  <script src="./assets/profile.js"></script>
-  <script type="text/javascript">
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-34781094-2']);
-      _gaq.push(['_trackPageview']);
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
-  </script>
-</body>  
+  </body>
 </html>
